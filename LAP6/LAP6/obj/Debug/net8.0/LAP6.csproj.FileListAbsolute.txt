@@ -1,0 +1,14 @@
+C:\Users\Admin\source\repos\LAP6\LAP6\bin\Debug\net8.0\LAP6.exe
+C:\Users\Admin\source\repos\LAP6\LAP6\bin\Debug\net8.0\LAP6.deps.json
+C:\Users\Admin\source\repos\LAP6\LAP6\bin\Debug\net8.0\LAP6.runtimeconfig.json
+C:\Users\Admin\source\repos\LAP6\LAP6\bin\Debug\net8.0\LAP6.dll
+C:\Users\Admin\source\repos\LAP6\LAP6\bin\Debug\net8.0\LAP6.pdb
+C:\Users\Admin\source\repos\LAP6\LAP6\obj\Debug\net8.0\LAP6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\LAP6\LAP6\obj\Debug\net8.0\LAP6.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\LAP6\LAP6\obj\Debug\net8.0\LAP6.AssemblyInfo.cs
+C:\Users\Admin\source\repos\LAP6\LAP6\obj\Debug\net8.0\LAP6.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\LAP6\LAP6\obj\Debug\net8.0\LAP6.dll
+C:\Users\Admin\source\repos\LAP6\LAP6\obj\Debug\net8.0\refint\LAP6.dll
+C:\Users\Admin\source\repos\LAP6\LAP6\obj\Debug\net8.0\LAP6.pdb
+C:\Users\Admin\source\repos\LAP6\LAP6\obj\Debug\net8.0\LAP6.genruntimeconfig.cache
+C:\Users\Admin\source\repos\LAP6\LAP6\obj\Debug\net8.0\ref\LAP6.dll
