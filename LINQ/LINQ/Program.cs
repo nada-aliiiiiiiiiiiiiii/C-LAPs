@@ -11,6 +11,9 @@ namespace LINQ
 
         static void Main(string[] args)
         {
+
+
+
             //----------------------------1-----------------------
             var re1 = ListGenerators.ProductList.Where(x => x.UnitsInStock == 0);
             foreach (var x in re1)
@@ -88,12 +91,16 @@ namespace LINQ
             
 
             int[] Arr3 = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+
             int re11 = Arr3.Count(n => n % 2 != 0);
+
             Console.WriteLine(re11);
             Console.WriteLine("------------------------");
 
+
             //--------------------------------------2---------------------------
             var re12 = ListGenerators.CustomerList
+
            .Select(c => new { c.CompanyName, OrdersCount = c.Orders.Count() });
             Console.WriteLine(re12);
             Console.WriteLine("------------------------");
@@ -105,15 +112,16 @@ namespace LINQ
 
 
             int total = Arr3.Sum();
+
             Console.WriteLine(total);
             Console.WriteLine("------------------------");
 
-            //Get the total number of characters of all words in dictionary_english.txt (Read dictionary_english.txt into Array of String First).
-
+            //------------------------Get the total number of characters of all words ---------------------------
             var re14 = File.ReadAllLines("dictionary_english.txt");
+
             int totalCh= re14.Sum(w => w.Length);
-            //Console.WriteLine(totalCh);
-            //Get the total units in stock for each product category.
+             Console.WriteLine(totalCh);
+            //------------------Get the total units in stock ---------------------------.
             var re15 = ListGenerators.ProductList
             .GroupBy(p => p.Category)
             .Select(g => new {
@@ -134,14 +142,20 @@ namespace LINQ
            .Select(g => new { Category = g.Key, MinPrice = g.Min(p => p.UnitPrice) });
 
 
-            //Get the length of the longest word 
+            //-----------------------------Get the length of the longest word --------------------
             int longest = re14.Max(w => w.Length);
             Console.WriteLine(longest);
-            // Get the most expensive price among each category's products. 
+            //-------------------- Get the most expensive price ----------------
             var re17 = ListGenerators.ProductList.GroupBy(p => p.Category)
             .Select(g => new { Category = g.Key, MaxPrice = g.Max(p => p.UnitPrice) });
+
+
+
             //--------------------------------------13---------------------------
             double avgLength = re14.Average(w => w.Length);
+
+
+
 
             //--------------------------------------14---------------------------
             var re18 = ListGenerators.ProductList.GroupBy(p => p.Category)
@@ -157,7 +171,7 @@ namespace LINQ
             }
 
 
-            string[] Arr4 = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            string[] Arr4= { "Orange", "apple", "Mango", "banana", "KiWi", "grape", "WATERMELON", "pear", "Apricot" };
             //--------------------------------------2---------------------------
             var re19 = Arr4.OrderBy(x => x, StringComparer.OrdinalIgnoreCase);
             foreach (var x in re19)
@@ -172,13 +186,16 @@ namespace LINQ
                 Console.WriteLine(x);
             }
 
-            // --------------------------Sort a list of digits --------------------------------       
+            // --------------------------Sort a list of digits --------------------------------
+            // 
             string[] Arr5 = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
             var re21 = Arr5.OrderBy(d => d.Length).ThenBy(d => d);
 
+
             // ---------------Sort by word length and case-insensitive sort of the words in an array. 
-            string[] words = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            string[] words = { "Orange", "apple", "Mango", "banana", "KiWi", "grape", "WATERMELON", "pear", "Apricot" };
             var re22 = words.OrderBy(w => w.Length).ThenBy(w => w, StringComparer.OrdinalIgnoreCase);
+
             foreach (var x in re22)
             {
                 Console.WriteLine(x);
@@ -192,8 +209,8 @@ namespace LINQ
                 Console.WriteLine(x);
             }
 
-            // Sort first by word length and then by a case-insensitive descending sort of the words in an array
-            string[] Arr6 = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            // Sort  by word length and then by a case-insensitive descending 
+            string[] Arr6 = { "Orange", "apple", "Mango", "banana", "KiWi", "grape", "WATERMELON", "pear", "Apricot" };
             var re24 = Arr6.OrderBy(w => w.Length).ThenByDescending(w => w, StringComparer.OrdinalIgnoreCase);
             foreach (var x in re24)
             {
